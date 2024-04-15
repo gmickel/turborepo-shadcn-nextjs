@@ -14,7 +14,8 @@
     "changeset": "changeset",
     "version-packages": "changeset version",
     "release": "turbo build --filter=docs^... && changeset publish",
-    "ui:add:component": "turbo ui:add --filter=ui"
+    "ui:add:component": "turbo ui:add --filter=ui",
+    "prepare": "lefthook install"
   },
   "devDependencies": {
     "@biomejs/biome": "1.7.0",
