@@ -10,7 +10,6 @@
     "lint": "turbo lint",
     "lint:fix": "turbo lint:fix",
     "clean": "turbo clean && rm -rf node_modules",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "changeset": "changeset",
     "version-packages": "changeset version",
     "release": "turbo build --filter=docs^... && changeset publish",
