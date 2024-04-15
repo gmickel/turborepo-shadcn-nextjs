@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "React Library",
+  "extends": "./base.json",
+  "compilerOptions": {
+    "declaration": true,
+    "composite": false,
+    "sourceMap": true,
+    "declarationMap": true,
+    "incremental": false,
+    "jsx": "react-jsx"
+  }
+}

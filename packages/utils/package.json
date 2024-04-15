@@ -1,0 +1,29 @@
+{
+  "name": "@repo/utils",
+  "version": "0.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "private": true,
+  "files": ["dist/**"],
+  "scripts": {
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
+    "lint": "biome check .",
+    "lint:fix": "biome check . --apply",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "devDependencies": {
+    "@repo/tsconfig": "workspace:*",
+    "@types/react": "18.2.78",
+    "@types/react-dom": "18.2.25",
+    "react": "18.2.0",
+    "tsup": "8.0.2",
+    "typescript": "5.4.5",
+    "@biomejs/biome": "1.7.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
