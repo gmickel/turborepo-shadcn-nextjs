@@ -3,6 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gmickel/turborepo-shadcn-nextjs"
+  },
+  "keywords": [
+    "starter",
+    "template",
+    "turborepo",
+    "biome",
+    "shadcn/cn",
+    "nextjs"
+  ],
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
