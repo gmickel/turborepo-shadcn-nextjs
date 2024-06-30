@@ -11,21 +11,21 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@biomejs/biome": "1.7.1",
+    "@biomejs/biome": "1.8.3",
     "@repo/tsconfig": "workspace:*",
-    "@types/node": "20.12.7",
-    "@types/react": "18.2.79",
+    "@types/node": "20.14.9",
+    "@types/react": "18.3.3",
     "autoprefixer": "10.4.19",
-    "postcss": "8.4.38",
-    "tailwindcss": "3.4.3",
-    "typescript": "5.4.5"
+    "postcss": "8.4.39",
+    "tailwindcss": "3.4.4",
+    "typescript": "5.5.2"
   },
   "dependencies": {
-    "@radix-ui/react-dropdown-menu": "2.0.6",
-    "@radix-ui/react-slot": "1.0.2",
+    "@radix-ui/react-dropdown-menu": "2.1.1",
+    "@radix-ui/react-slot": "1.1.0",
     "class-variance-authority": "0.7.0",
     "clsx": "2.1.1",
-    "lucide-react": "0.372.0",
+    "lucide-react": "0.399.0",
     "tailwind-merge": "2.3.0",
     "tailwindcss-animate": "1.0.7"
   },
