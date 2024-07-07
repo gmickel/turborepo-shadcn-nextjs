@@ -145,4 +145,17 @@ Learn more about Vitest:
 ## Contributers 👨‍💻
 
 <!-- readme: collaborators,contributors -start -->
+<table>
+	<tbody>
+		<tr>
+            <td align="center">
+                <a href="https://github.com/gmickel">
+                    <img src="https://avatars.githubusercontent.com/u/139907?v=4" width="100;" alt="gmickel"/>
+                    <br />
+                    <sub><b>Gordon Mickel</b></sub>
+                </a>
+            </td>
+		</tr>
+	<tbody>
+</table>
 <!-- readme: collaborators,contributors -end -->
