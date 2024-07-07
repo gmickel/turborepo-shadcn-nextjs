@@ -141,3 +141,8 @@ Learn more about Playwright:
 Learn more about Vitest:
 
 - [Documentation](https://vitest.dev/guide/)
+
+## Contributers 👨‍💻
+
+<!-- readme: collaborators,contributors -start -->
+<!-- readme: collaborators,contributors -end -->
