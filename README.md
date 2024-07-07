@@ -39,7 +39,7 @@ This Turborepo includes the following:
 
 ### Apps and Packages 📂
 
-- `@repo/docs`: a placeholder documentation site powered by [Nextra 3 alpha](https://nextra.site/) 📚
+- `@repo/docs`: a placeholder documentation site powered by [Nextra 3 alpha](https://the-guild.dev/blog/nextra-3) 📚
 - `@repo/web`: the main [Next.js](https://nextjs.org/) web application 🌐
 - `@repo/ui`: core React components and design system shared by both `web` and `docs` applications (🚀 powered by **shadcn/ui**)
 - `@repo/utils`: shared React utilities 🛠️
