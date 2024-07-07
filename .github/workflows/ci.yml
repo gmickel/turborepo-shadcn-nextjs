@@ -17,6 +17,6 @@ jobs:
       - name: Install Playwright browsers
         run: bunx playwright install --with-deps
       - name: Run E2E tests
-        run: bunx playwright test
+        run: bunx playwright test --config=apps/web/playwright.config.ts
       - name: Lint
         run: bun run lint
