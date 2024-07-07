@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import { ThemeScript } from 'next-app-theme/theme-script';
 import { Inter } from 'next/font/google';
 import type React from 'react';
+import { Providers } from './providers';
 
 import '@repo/ui/globals.css';
 
@@ -23,10 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <ThemeScript />
-      </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }
