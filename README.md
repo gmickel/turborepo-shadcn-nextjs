@@ -1,4 +1,4 @@
-# A Turborepo starter template with Next.js, Nextra, and a shared pre-configured shadcn/ui package, powered by Bun and Biome 🚀
+# A Turborepo starter template with Next.js, Nextra, and a shared pre-configured shadcn/ui package, powered by Bun, Vitest, Playwright and Biome 🚀
 
 ![Static Badge](https://img.shields.io/badge/shadcn%2Fui-0.8.0-blue?link=https%3A%2F%2Fgithub.com%2Fshadcn%2Fui)
 
@@ -50,7 +50,8 @@ This Turborepo has some additional tools already set up for you:
 
 - [TypeScript](https://www.typescriptlang.org/) for static type checking ✅
 - [Biome](https://biomejs.dev/) for code linting, formatting, and fixing 🌿
-- [Vitest](https://vitest.dev/) for testing 🧪
+- [Vitest](https://vitest.dev/) for unit tests 🧪
+- [Playwright](https://playwright.dev/) for end-to-end tests 🧪
 - [Changesets](https://github.com/changesets/changesets) for managing versioning, changelogs, and publishing 📝
 
 ### Useful commands 🤖
@@ -59,6 +60,9 @@ This Turborepo has some additional tools already set up for you:
 - `bun dev` - Develop all apps and packages
 - `bun dev:ui` - Develop all apps and packages and display the output in Turbo's new experimental UI
 - `bun test` - Run all tests with vitest
+- `bun test:cov` - Run all unit tests with vitest and generate a coverage report
+- `bun test:cov:ui` - Run all unit tests with vitest and display the vitest UI
+- `bun test:e2e` - Run all end-to-end tests with playwright
 - `bun lint` - Lint and format all packages
 - `bun lint:fix` - Lint, format, and fix all packages
 - `bun changeset` - Generate a changeset 🚧 - WIP
@@ -126,3 +130,11 @@ Learn more about Biome:
 Learn more about Changesets:
 
 - [Documentation](https://github.com/changesets/changesets)
+
+Learn more about Playwright:
+
+- [Documentation](https://playwright.dev/docs/intro)
+
+Learn more about Vitest:
+
+- [Documentation](https://vitest.dev/guide/)
