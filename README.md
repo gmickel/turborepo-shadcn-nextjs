@@ -57,6 +57,7 @@ This Turborepo has some additional tools already set up for you:
 - `bun build` - Build all apps and packages
 - `bun dev` - Develop all apps and packages
 - `bun dev:ui` - Develop all apps and packages and display the output in Turbo's new experimental UI
+- `bun test` - Run all tests with vitest
 - `bun lint` - Lint and format all packages
 - `bun lint:fix` - Lint, format, and fix all packages
 - `bun changeset` - Generate a changeset 🚧 - WIP
