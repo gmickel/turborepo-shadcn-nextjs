@@ -50,6 +50,7 @@ This Turborepo has some additional tools already set up for you:
 
 - [TypeScript](https://www.typescriptlang.org/) for static type checking ✅
 - [Biome](https://biomejs.dev/) for code linting, formatting, and fixing 🌿
+- [Vitest](https://vitest.dev/) for testing 🧪
 - [Changesets](https://github.com/changesets/changesets) for managing versioning, changelogs, and publishing 📝
 
 ### Useful commands 🤖
