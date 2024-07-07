@@ -9,7 +9,10 @@
     "lint": "biome check .",
     "lint:fix": "biome check . --apply",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf .next",
-    "test": "vitest"
+    "test": "vitest",
+    "test:e2e": "playwright test",
+    "test:cov": "vitest --coverage",
+    "test:cov:ui": "vitest --ui --coverage"
   },
   "dependencies": {
     "@repo/ui": "workspace:*",

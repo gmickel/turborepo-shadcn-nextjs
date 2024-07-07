@@ -1,17 +1,35 @@
 {
   "$schema": "https://turbo.build/schema.json",
   "globalDependencies": ["**/.env.*local"],
+  "ui": "tui",
   "tasks": {
     "build": {
       "outputs": ["dist/**", ".next/**", "!.next/cache/**"],
       "dependsOn": ["^build"]
     },
+    "test:e2e": {
+      "outputs": ["tests/coverage/e2e/**"]
+    },
+    "test:e2e:with-build": {
+      "outputs": ["tests/coverage/e2e/**"],
+      "dependsOn": ["^build"]
+    },
     "test": {
-      "outputs": ["coverage/**"]
+      "persistent": true
+    },
+    "test:ui": {
+      "persistent": true
+    },
+    "test:cov": {
+      "persistent": true,
+      "outputs": ["tests/coverage/unit/**"]
+    },
+    "test:cov:ui": {
+      "outputs": ["tests/coverage/unit/**"],
+      "persistent": true
     },
     "test:with-build": {
-      "dependsOn": ["^build"],
-      "outputs": ["coverage/**"]
+      "dependsOn": ["^build"]
     },
     "lint": {
       "cache": false
@@ -19,7 +37,9 @@
     "lint:fix": {
       "cache": false
     },
-    "ui:add": {},
+    "ui:add": {
+      "persistent": true
+    },
     "dev": {
       "cache": false,
       "persistent": true
