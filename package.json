@@ -33,7 +33,7 @@
     "@biomejs/biome": "1.8.3",
     "@changesets/cli": "2.27.7",
     "lefthook": "1.6.18",
-    "turbo": "latest",
+    "turbo": "2.0.6",
     "vitest": "1.6.0"
   },
   "engines": {
