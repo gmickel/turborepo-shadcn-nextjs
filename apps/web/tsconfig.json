@@ -3,6 +3,7 @@
   "display": "Next.js",
   "extends": "@repo/tsconfig/nextjs.json",
   "compilerOptions": {
+    "types": ["vitest/globals"],
     "plugins": [
       {
         "name": "next"

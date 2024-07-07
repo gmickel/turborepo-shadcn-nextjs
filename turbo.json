@@ -7,8 +7,11 @@
       "dependsOn": ["^build"]
     },
     "test": {
-      "outputs": ["coverage/**"],
-      "dependsOn": ["build"]
+      "outputs": ["coverage/**"]
+    },
+    "test:with-build": {
+      "dependsOn": ["^build"],
+      "outputs": ["coverage/**"]
     },
     "lint": { "cache": false },
     "lint:fix": { "cache": false },

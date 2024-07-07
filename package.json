@@ -26,13 +26,15 @@
     "version-packages": "changeset version",
     "release": "turbo build --filter=docs^... && changeset publish",
     "ui:add:component": "turbo ui:add --filter=ui",
-    "prepare": "lefthook install"
+    "prepare": "lefthook install",
+    "test": "turbo test"
   },
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
-    "@changesets/cli": "2.27.6",
+    "@changesets/cli": "2.27.7",
     "lefthook": "1.6.18",
-    "turbo": "latest"
+    "turbo": "latest",
+    "vitest": "1.6.0"
   },
   "engines": {
     "node": ">=18"
