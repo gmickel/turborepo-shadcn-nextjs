@@ -27,11 +27,13 @@
     "release": "turbo build --filter=docs^... && changeset publish",
     "ui:add:component": "turbo ui:add --filter=ui",
     "prepare": "lefthook install",
-    "test": "turbo test"
+    "test": "turbo test",
+    "test:ui": "turbo test -- --ui"
   },
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
     "@changesets/cli": "2.27.7",
+    "@vitest/ui": "1.6.0",
     "lefthook": "1.6.18",
     "turbo": "2.0.6",
     "vitest": "1.6.0"
