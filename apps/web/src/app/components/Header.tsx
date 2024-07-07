@@ -5,7 +5,7 @@ const ThemeSwitcher = dynamic(() => import('./ThemeSwitcher'), {
   loading: () => <div className="w-6 h-6" />,
 });
 
-import MountainIcon from './icons/MountainIcon';
+import MountainIcon from '@/app/components/icons/MountainIcon';
 
 export default function Header() {
   return (

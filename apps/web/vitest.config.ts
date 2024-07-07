@@ -5,6 +5,10 @@ import { defineConfig } from 'vitest/config';
 export default defineConfig({
   plugins: [react()],
   test: {
+    include: ['./tests/unit{,/**}/*.{test,spec}.{ts,tsx}'],
+    coverage: {
+      reportsDirectory: './tests/unit/coverage',
+    },
     environment: 'jsdom',
     globals: true,
     setupFiles: ['./src/test/setup.ts'],
