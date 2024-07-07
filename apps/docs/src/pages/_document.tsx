@@ -3,7 +3,7 @@ import { SkipNavLink } from 'nextra-theme-docs';
 import { inter } from '../fonts';
 
 class MyDocument extends Document {
-  render() {
+  override render() {
     return (
       <Html lang="en">
         <Head />
