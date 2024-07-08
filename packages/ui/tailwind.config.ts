@@ -1,3 +1,4 @@
+import path from 'node:path';
 import type { Config } from 'tailwindcss';
 
 const config = {
@@ -8,6 +9,14 @@ const config = {
     './app/**/*.{ts,tsx,md,mdx}',
     './src/**/*.{ts,tsx,md,mdx}',
     '../../packages/ui/src/**/*.{ts,tsx}',
+    path.join(
+      path.dirname(require.resolve('@repo/web/package.json')),
+      '**/*.{ts,tsx,md,mdx}',
+    ),
+    path.join(
+      path.dirname(require.resolve('@repo/storybook/package.json')),
+      '**/*.{ts,tsx,md,mdx}',
+    ),
   ],
   prefix: '',
   theme: {
