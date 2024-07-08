@@ -143,7 +143,7 @@ Learn more about Vitest:
 
 - [Documentation](https://vitest.dev/guide/)
 
-## Contributers 👨‍💻
+## Contributors 👨‍💻
 
 <!-- readme: collaborators,contributors -start -->
 <!-- readme: collaborators,contributors -end -->
