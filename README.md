@@ -2,6 +2,7 @@
 
 ![Static Badge](https://img.shields.io/badge/shadcn%2Fui-0.8.0-blue?link=https%3A%2F%2Fgithub.com%2Fshadcn%2Fui)
 [![CI](https://github.com/gmickel/turborepo-shadcn-nextjs/actions/workflows/ci.yml/badge.svg)](https://github.com/gmickel/turborepo-shadcn-nextjs/actions/workflows/ci.yml)
+[![Known Vulnerabilities](https://snyk.io/test/github/gmickel/turborepo-shadcn-nextjs/badge.svg)](https://snyk.io/test/github/gmickel/turborepo-shadcn-nextjs)
 [![License](https://img.shields.io/github/license/gmickel/turborepo-shadcn-nextjs.svg)](https://github.com/gmickel/turborepo-shadcn-nextjs/blob/main/LICENSE)
 ![Bun](https://img.shields.io/badge/Bun-%23000000.svg?&logo=bun&logoColor=white)
 
