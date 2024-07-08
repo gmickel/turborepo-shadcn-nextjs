@@ -1,20 +1,14 @@
+import path from 'node:path';
+import uiConfig from '@repo/ui/tailwind.config';
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
+  ...uiConfig,
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    ...uiConfig.content,
+    path.join(__dirname, '**/*.{js,ts,jsx,tsx,mdx}'),
+    path.join(__dirname, '.storybook/**/*.{js,ts,jsx,tsx,mdx}'),
   ],
-  theme: {
-    extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
-    },
-  },
-  plugins: [],
 };
+
 export default config;

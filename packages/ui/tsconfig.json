@@ -1,9 +1,11 @@
 {
   "extends": "@repo/tsconfig/react-library.json",
   "compilerOptions": {
+    "verbatimModuleSyntax": false,
     "incremental": true,
     "baseUrl": ".",
     "paths": {
+      "@/*": ["./src/*"],
       "@ui/*": ["src/*"]
     }
   },

@@ -1,22 +1,13 @@
-import path from 'node:path';
 import type { Config } from 'tailwindcss';
 
 const config = {
   darkMode: ['class'],
   content: [
-    './pages/**/*.{ts,tsx,md,mdx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx,md,mdx}',
     './src/**/*.{ts,tsx,md,mdx}',
     '../../packages/ui/src/**/*.{ts,tsx}',
-    path.join(
-      path.dirname(require.resolve('@repo/web/package.json')),
-      '**/*.{ts,tsx,md,mdx}',
-    ),
-    path.join(
-      path.dirname(require.resolve('@repo/storybook/package.json')),
-      '**/*.{ts,tsx,md,mdx}',
-    ),
+    '../../apps/web/src/**/*.{ts,tsx,md,mdx}',
+    '../../apps/storybook/src/**/*.{ts,tsx,md,mdx}',
+    '../../apps/storybook/.storybook/**/*.{js,ts,jsx,tsx}',
   ],
   prefix: '',
   theme: {

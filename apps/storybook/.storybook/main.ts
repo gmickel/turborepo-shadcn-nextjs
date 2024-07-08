@@ -2,9 +2,6 @@ import path from 'node:path';
 import type { StorybookConfig } from '@storybook/nextjs';
 
 const config: StorybookConfig = {
-  features: {
-    experimentalRSC: true,
-  },
   stories: [
     '../src/**/*.mdx',
     '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)',
@@ -16,6 +13,27 @@ const config: StorybookConfig = {
     '@storybook/addon-essentials',
     '@storybook/addon-onboarding',
     '@storybook/addon-interactions',
+    '@storybook/addon-themes',
+    {
+      name: '@storybook/addon-styling-webpack',
+      options: {
+        rules: [
+          {
+            test: /\.css$/,
+            use: [
+              'style-loader',
+              'css-loader',
+              {
+                loader: 'postcss-loader',
+                options: {
+                  postcssOptions: require('../postcss.config.mjs'),
+                },
+              },
+            ],
+          },
+        ],
+      },
+    },
   ],
   framework: {
     name: '@storybook/nextjs',
@@ -24,7 +42,6 @@ const config: StorybookConfig = {
   docs: {
     autodocs: 'tag',
   },
-  staticDirs: ['../../../packages/ui/src'],
   webpackFinal: async (config) => {
     if (config.resolve) {
       config.resolve.alias = {
