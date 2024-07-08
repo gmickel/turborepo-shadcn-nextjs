@@ -1,4 +1,4 @@
-# A Turborepo starter template with Next.js, Nextra, and a shared pre-configured shadcn/ui package, powered by Bun, Vitest, Playwright and Biome 🚀
+# A Turborepo starter template with Next.js, Nextra, and a shared pre-configured shadcn/ui package, powered by Bun, Vitest, Playwright, Storybook and Biome 🚀
 
 ![Static Badge](https://img.shields.io/badge/shadcn%2Fui-0.8.0-blue?link=https%3A%2F%2Fgithub.com%2Fshadcn%2Fui)
 [![CI](https://github.com/gmickel/turborepo-shadcn-nextjs/actions/workflows/ci.yml/badge.svg)](https://github.com/gmickel/turborepo-shadcn-nextjs/actions/workflows/ci.yml)
