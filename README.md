@@ -137,7 +137,7 @@ For the auto-merge workflow:
 
 Maintains an up-to-date list of contributors in your README.
 
-[View Contributors Workflow](.github/workflows/update-contributors.yml)
+[View Contributors Workflow](.github/workflows/contributors.yml)
 
 ### 🚀 Getting Started
 
