@@ -143,27 +143,7 @@ Maintains an up-to-date list of contributors in your README.
 
 1. Dependabot is active out-of-the-box. Review and adjust the config as needed.
 2. Ensure proper permissions for the auto-merge workflow.
-3. Add this placeholder to your README for the contributors list:
-
-   ```markdown
-   ## Contributors
-
-   <!-- readme: contributors -start -->
-<table>
-	<tbody>
-		<tr>
-            <td align="center">
-                <a href="https://github.com/gmickel">
-                    <img src="https://avatars.githubusercontent.com/u/139907?v=4" width="100;" alt="gmickel"/>
-                    <br />
-                    <sub><b>Gordon Mickel</b></sub>
-                </a>
-            </td>
-		</tr>
-	<tbody>
-</table>
-<!-- readme: contributors -end -->
-   ```
+3. To read more about the contributors list, see the [contributors-readme-action](https://github.com/akhilmhdh/contributors-readme-action) README.
 
 ## Versioning and Publishing packages 📦
 
