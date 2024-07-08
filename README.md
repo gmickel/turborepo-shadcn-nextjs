@@ -94,6 +94,64 @@ You will be prompted to choose the name and workspace type (app or package) of t
 > [!NOTE]
 > Remember to run `bun install` after copying an app. ⚠️
 
+### CI 🤖
+
+[![CI](https://github.com/gmickel/turborepo-shadcn-nextjs/actions/workflows/ci.yml/badge.svg)](https://github.com/gmickel/turborepo-shadcn-nextjs/actions/workflows/ci.yml)
+
+This Turborepo uses [GitHub Actions](https://github.com/features/actions) for CI. 🤖
+
+It comes preconfigured with the following workflow that runs on every push or pull request to the `main` branch:
+
+1. **Setup**: Checks out the code and sets up Bun.
+2. **Install**: Installs all dependencies using Bun.
+3. **Build**: Builds all apps and packages in the monorepo.
+4. **Unit Tests**: Runs all unit tests using [Vitest](https://vitest.dev/).
+5. **E2E Tests**: Installs Playwright browsers and runs end-to-end tests using [Playwright](https://playwright.dev/).
+6. **Lint**: Performs linting and formatting checks using [Biome](https://biomejs.dev/).
+
+### Automated Dependency Management & Contributor Recognition 🤖
+
+This template includes some useful automation tools:
+
+#### 1. Dependabot Configuration 🔄
+
+Keeps dependencies up-to-date automatically with daily checks and update rules.
+
+[View Dependabot Config](.github/dependabot.yml)
+
+#### 2. Auto-merge for Dependabot PRs 🔀
+
+Can automatically merges patch updates from Dependabot to reduce manual work.
+
+[View Auto-merge Workflow](.github/workflows/auto-merge-dependabot.yml)
+
+For the auto-merge workflow:
+
+- Go to your repository's Settings > Actions > General.
+- Under "Workflow permissions", select "Read and write permissions".
+- Check "Allow GitHub Actions to create and approve pull requests".
+- Save the changes.
+- Optionally, create a Personal Access Token (PAT) with `repo` scope and add it as a repository secret named `GITHUB_TOKEN` for enhanced security.
+
+#### 3. Automated Contributors List 👥
+
+Maintains an up-to-date list of contributors in your README.
+
+[View Contributors Workflow](.github/workflows/update-contributors.yml)
+
+### 🚀 Getting Started
+
+1. Dependabot is active out-of-the-box. Review and adjust the config as needed.
+2. Ensure proper permissions for the auto-merge workflow.
+3. Add this placeholder to your README for the contributors list:
+
+   ```markdown
+   ## Contributors
+
+   <!-- readme: contributors -start -->
+   <!-- readme: contributors -end -->
+   ```
+
 ## Versioning and Publishing packages 📦
 
 🚧 WIP
