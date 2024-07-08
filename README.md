@@ -149,7 +149,20 @@ Maintains an up-to-date list of contributors in your README.
    ## Contributors
 
    <!-- readme: contributors -start -->
-   <!-- readme: contributors -end -->
+<table>
+	<tbody>
+		<tr>
+            <td align="center">
+                <a href="https://github.com/gmickel">
+                    <img src="https://avatars.githubusercontent.com/u/139907?v=4" width="100;" alt="gmickel"/>
+                    <br />
+                    <sub><b>Gordon Mickel</b></sub>
+                </a>
+            </td>
+		</tr>
+	<tbody>
+</table>
+<!-- readme: contributors -end -->
    ```
 
 ## Versioning and Publishing packages 📦
