@@ -26,6 +26,8 @@
     "release": "turbo build --filter=docs^... && changeset publish",
     "ui:add:component": "turbo ui:add --filter=@repo/ui",
     "prepare": "lefthook install",
+    "storybook": "turbo dev --filter=@repo/storybook",
+    "build:storybook": "turbo build --filter=@repo/storybook",
     "test": "turbo test",
     "test:build": "turbo test:with-build",
     "test:e2e": "turbo test:e2e",
@@ -42,7 +44,7 @@
     "@playwright/test": "1.45.1",
     "@vitest/coverage-v8": "1.6.0",
     "@vitest/ui": "1.6.0",
-    "lefthook": "1.6.18",
+    "lefthook": "1.6.21",
     "turbo": "2.0.6",
     "vitest": "1.6.0"
   },

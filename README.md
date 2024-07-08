@@ -7,7 +7,7 @@
 ![Bun](https://img.shields.io/badge/Bun-%23000000.svg?&logo=bun&logoColor=white)
 
 > [!NOTE]
-> This repo uses `bun` as the package manager. 📦
+> This repo uses `bun` as the package manager. 🐰
 
 ## How to use 🛠️
 
@@ -34,15 +34,15 @@ bun ui:add:component <component-name>
 
 > This works just like the add command in the `shadcn/ui` CLI. 🎨
 
-## What's inside? 🔍
+## What's inside? 📦
 
 This Turborepo includes the following:
 
-### Apps and Packages 📂
+### Apps and Packages 📚
 
-- `@repo/docs`: a placeholder documentation site powered by [Nextra 3 alpha](https://the-guild.dev/blog/nextra-3) 📚
+- `@repo/docs`: a placeholder documentation site powered by [Nextra 3 alpha](https://the-guild.dev/blog/nextra-3) 📖
 - `@repo/web`: the main [Next.js](https://nextjs.org/) web application 🌐
-- `@repo/ui`: core React components and design system shared by both `web` and `docs` applications (🚀 powered by **shadcn/ui**)
+- `@repo/ui`: core React components and design system shared by both `web` and `docs` applications (🎨 powered by **shadcn/ui**)
 - `@repo/utils`: shared React utilities 🛠️
 - `@repo/tsconfig`: shared `tsconfig.json`s used throughout the monorepo 🛡️
 
@@ -57,6 +57,41 @@ This Turborepo has some additional tools already set up for you:
 - [Vitest](https://vitest.dev/) for unit tests 🧪
 - [Playwright](https://playwright.dev/) for end-to-end tests 🧪
 - [Changesets](https://github.com/changesets/changesets) for managing versioning, changelogs, and publishing 📝
+- [Storybook](https://storybook.js.org/) for component development and documentation 📚
+
+### Storybook 📚
+
+This Turborepo includes Storybook for component development and documentation. Storybook is set up for both the `@repo/web` and `@repo/ui` packages, allowing the development and showcasing of components from both your main application and your shared UI library.
+
+To run Storybook:
+
+```sh
+bun storybook
+```
+
+This will start Storybook and open it in your default browser.
+
+#### Story Location
+
+Storybook is configured to find stories in the following locations:
+
+- `apps/storybook/src/**/*.mdx`
+- `apps/storybook/src/**/*.stories.@(js|jsx|mjs|ts|tsx)`
+- `apps/web/src/**/*.stories.@(js|jsx|mjs|ts|tsx)`
+- `packages/ui/src/**/*.stories.@(js|jsx|mjs|ts|tsx)`
+
+This configuration allows you to write stories for components in both your web application and your shared UI library.
+
+#### Storybook Addons
+
+This setup includes several useful Storybook addons:
+
+- `@storybook/addon-links`: For linking between stories
+- `@storybook/addon-essentials`: A curated set of addons for a great developer experience
+- `@storybook/addon-onboarding`: For onboarding new users
+- `@storybook/addon-interactions`: For testing component interactions
+- `@storybook/addon-themes`: For theme switching in Storybook
+- `@storybook/addon-styling-webpack`: For handling CSS and PostCSS in Storybook
 
 ### Useful commands 🤖
 
@@ -69,9 +104,10 @@ This Turborepo has some additional tools already set up for you:
 - `bun test:e2e` - Run all end-to-end tests with playwright
 - `bun lint` - Lint and format all packages
 - `bun lint:fix` - Lint, format, and fix all packages
-- `bun changeset` - Generate a changeset 🚧 - WIP
+- `bun changeset` - Generate a changeset 🧑‍🔧 - WIP
 - `bun clean` - Clean up all `node_modules` and `dist` folders (runs each package's clean script)
 - `bun ui:add:component` - Add a shadcn/ui component to the `@repo/ui` package
+- `bun storybook` - Run Storybook for component development and documentation
 
 ### Add a new app or package 📦
 
@@ -133,7 +169,7 @@ For the auto-merge workflow:
 - Save the changes.
 - Optionally, create a Personal Access Token (PAT) with `repo` scope and add it as a repository secret named `GITHUB_TOKEN` for enhanced security.
 
-#### 3. Automated Contributors List 👥
+#### 3. Automated Contributors List 🙌
 
 Maintains an up-to-date list of contributors in your README.
 
@@ -147,52 +183,39 @@ Maintains an up-to-date list of contributors in your README.
 
 ## Versioning and Publishing packages 📦
 
-🚧 WIP
+🧑‍🔧 WIP
 
 For more information, refer to the official [Changesets documentation](https://github.com/changesets/changesets/blob/main/docs/automating-changesets.md).
 
 ## Useful Links and Thanks 🙏
 
-Learn more about Turborepo:
+### Build Tools and Configuration
 
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+- [Turborepo Documentation](https://turbo.build/repo/docs)
+  - [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
+  - [Caching](https://turbo.build/repo/docs/core-concepts/caching)
+  - [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
+  - [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
+  - [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
+  - [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+- [Bun Documentation](https://bun.sh/docs)
+- [Biome Documentation](https://biomejs.dev/guides/getting-started/)
 
-Learn more about Next.js:
+### Frameworks and Libraries
 
-- [Documentation](https://nextjs.org/docs)
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Nextra Documentation](https://nextra.site/docs)
+- [shadcn/ui Documentation](https://ui.shadcn.com/docs)
 
-Learn more about Nextra:
+### Testing Tools
 
-- [Documentation](https://nextra.site/docs)
+- [Vitest Documentation](https://vitest.dev/guide/)
+- [Playwright Documentation](https://playwright.dev/docs/intro)
 
-Learn more about shadcn/ui:
+### Development Tools
 
-- [Documentation](https://ui.shadcn.com/docs)
-
-Learn more about Bun:
-
-- [Documentation](https://bun.sh/docs)
-
-Learn more about Biome:
-
-- [Documentation](https://biomejs.dev/guides/getting-started/)
-
-Learn more about Changesets:
-
-- [Documentation](https://github.com/changesets/changesets)
-
-Learn more about Playwright:
-
-- [Documentation](https://playwright.dev/docs/intro)
-
-Learn more about Vitest:
-
-- [Documentation](https://vitest.dev/guide/)
+- [Storybook Documentation](https://storybook.js.org/docs)
+- [Changesets Documentation](https://github.com/changesets/changesets)
 
 ## Contributors 👨‍💻
 

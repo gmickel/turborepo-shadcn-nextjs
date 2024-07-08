@@ -11,6 +11,8 @@ node_modules
 **/tests/e2e/coverage
 .last-run.json
 
+# storybook
+storybook-static/
 
 # next.js
 .next/
