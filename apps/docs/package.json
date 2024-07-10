@@ -11,7 +11,6 @@
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf .next"
   },
   "dependencies": {
-    "@biomejs/biome": "1.8.3",
     "@repo/ui": "workspace:*",
     "@repo/utils": "workspace:*",
     "next": "14.2.5",
@@ -22,8 +21,8 @@
     "react-dom": "18.3.1"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.8.3",
     "@repo/tsconfig": "workspace:*",
-    "@next/eslint-plugin-next": "14.2.5",
     "@types/node": "20.14.10",
     "@types/react": "18.3.3",
     "@types/react-dom": "18.3.0",
