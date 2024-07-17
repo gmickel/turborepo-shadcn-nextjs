@@ -187,6 +187,28 @@ Maintains an up-to-date list of contributors in your README.
 
 For more information, refer to the official [Changesets documentation](https://github.com/changesets/changesets/blob/main/docs/automating-changesets.md).
 
+## Deployment 🚀
+
+This Turborepo is set up for easy deployment of its various applications.
+
+### Vercel Deployment 🌐
+
+The `docs` and `web` apps can be deployed to Vercel without any additional configuration. This allows for quick and easy deployment of your Next.js applications.
+
+#### Test Deployments
+
+You can view the test deployments for these apps:
+
+- `apps/web`: [https://turborepo-shadcn-nextjs-web.vercel.app/](https://turborepo-shadcn-nextjs-web.vercel.app/)
+- `apps/docs`: [https://turborepo-shadcn-nextjs-docs.vercel.app/](https://turborepo-shadcn-nextjs-docs.vercel.app/)
+
+### Storybook Deployment 📚
+
+The `apps/storybook` is automatically deployed to GitHub Pages using a custom workflow.
+
+- **Workflow File**: You can find the deployment workflow at `.github/workflows/storybook-deploy.yml`
+- **Deployment URL**: The deployed Storybook can be accessed at [https://gmickel.github.io/turborepo-shadcn-nextjs/](https://gmickel.github.io/turborepo-shadcn-nextjs/)
+
 ## Useful Links and Thanks 🙏
 
 ### Build Tools and Configuration
