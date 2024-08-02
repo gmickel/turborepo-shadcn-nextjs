@@ -1,10 +1,23 @@
-# A Turborepo starter template with Next.js, Nextra, and a shared pre-configured shadcn/ui package, powered by Bun, Vitest, Playwright, Storybook and Biome 🚀
+# 🚀 Turborepo Starter with Next.js, Nextra, and shadcn/ui
 
 ![Static Badge](https://img.shields.io/badge/shadcn%2Fui-0.8.0-blue?link=https%3A%2F%2Fgithub.com%2Fshadcn%2Fui)
+
 [![CI](https://github.com/gmickel/turborepo-shadcn-nextjs/actions/workflows/ci.yml/badge.svg)](https://github.com/gmickel/turborepo-shadcn-nextjs/actions/workflows/ci.yml)
 [![Known Vulnerabilities](https://snyk.io/test/github/gmickel/turborepo-shadcn-nextjs/badge.svg)](https://snyk.io/test/github/gmickel/turborepo-shadcn-nextjs)
 [![License](https://img.shields.io/github/license/gmickel/turborepo-shadcn-nextjs.svg)](https://github.com/gmickel/turborepo-shadcn-nextjs/blob/main/LICENSE)
+
 ![Bun](https://img.shields.io/badge/Bun-%23000000.svg?&logo=bun&logoColor=white)
+
+A powerful monorepo starter template featuring Next.js, Nextra, and a shared pre-configured shadcn/ui package, powered by Bun, Vitest, Playwright, Storybook, and Biome.
+
+* [🌟 Features](#-features)
+* [🚀 Quick Start](#-quick-start)
+* [📦 What's Inside?](#-whats-inside)
+* [🛠️ Useful Commands](#️-useful-commands)
+* [🧰 Development Tools](#-development-tools)
+* [🚀 Deployment](#-deployment)
+* [🔗 Useful Links](#-useful-links)
+* [👥 Contributors](#-contributors)
 
 ## 🌟 Features
 
@@ -21,24 +34,23 @@
 * 👥 Automated contributor recognition
 * 🚀 CI/CD setup with GitHub Actions
 
-## How to use 🛠️
-
-Clone the repository:
+## 🚀 Quick Start
 
 ```sh
+# Clone the repository
 git clone https://github.com/gmickel/turborepo-shadcn-nextjs.git
-```
 
-Install dependencies:
-
-```sh
+# Navigate to the project directory
 cd turborepo-shadcn-nextjs
+
+# Install dependencies
 bun install
+
+# Start development server
+bun dev
 ```
 
-### Add UI components ✨
-
-Use the pre-made script:
+### Add UI Components
 
 ```sh
 bun ui:add:component <component-name>
@@ -48,15 +60,25 @@ bun ui:add:component <component-name>
 
 ## What's inside? 📦
 
-This Turborepo includes the following:
+```mermaid
+graph TD
+    A[Turborepo] --> B[Apps]
+    A --> C[Packages]
+    B --> D[@repo/docs]
+    B --> E[@repo/web]
+    B --> F[@repo/storybook]
+    C --> G[@repo/ui]
+    C --> H[@repo/utils]
+    C --> I[@repo/tsconfig]
+```
 
-### Apps and Packages 📚
-
-* `@repo/docs`: a placeholder documentation site powered by [Nextra 3 alpha](https://the-guild.dev/blog/nextra-3) 📖
-* `@repo/web`: the main [Next.js](https://nextjs.org/) web application 🌐
-* `@repo/ui`: core React components and design system shared by both `web` and `docs` applications (🎨 powered by **shadcn/ui**)
-* `@repo/utils`: shared React utilities 🛠️
-* `@repo/tsconfig`: shared `tsconfig.json`s used throughout the monorepo 🛡️
+| App/Package | Description |
+|-------------|-------------|
+| `@repo/docs` | Documentation site powered by [Nextra 3 alpha](https://the-guild.dev/blog/nextra-3) 📖 |
+| `@repo/web` | Main Next.js web application 🌐 |
+| `@repo/ui` | Core React components and design system shared by both `web` and `docs` applications (powered by shadcn/ui) 🎨 |
+| `@repo/utils` | Shared React utilities 🛠️ |
+| `@repo/tsconfig` | Shared `tsconfig.json` configurations 🛡️ |
 
 Each package and app is 100% [TypeScript](https://www.typescriptlang.org/). 💪
 
@@ -139,7 +161,7 @@ bun turbo gen workspace [--name <app-name>] --copy
 
 You will be prompted to choose the name and workspace type (app or package) of the new app and which app or package to copy.
 
-> [!NOTE]
+> [! NOTE]
 > Remember to run `bun install` after copying an app. ⚠️
 
 ### CI 🤖
