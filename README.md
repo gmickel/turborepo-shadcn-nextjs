@@ -6,8 +6,20 @@
 [![License](https://img.shields.io/github/license/gmickel/turborepo-shadcn-nextjs.svg)](https://github.com/gmickel/turborepo-shadcn-nextjs/blob/main/LICENSE)
 ![Bun](https://img.shields.io/badge/Bun-%23000000.svg?&logo=bun&logoColor=white)
 
-> [!NOTE]
-> This repo uses `bun` as the package manager. 🐰
+## 🌟 Features
+
+* 📦 Monorepo structure with Turborepo for efficient build system and caching
+* ⚡ Next.js for fast, server-side rendered React applications
+* 📚 Nextra for easy-to-create documentation sites
+* 🎨 shadcn/ui for beautiful, customizable UI components
+* 🐰 Bun as a fast, all-in-one JavaScript runtime
+* 🧪 Vitest for speedy unit testing
+* 🎭 Playwright for reliable end-to-end testing
+* 📖 Storybook for isolated component development and documentation
+* 🌿 Biome for fast, opinionated linting and formatting
+* 🔄 Automated dependency management with Dependabot
+* 👥 Automated contributor recognition
+* 🚀 CI/CD setup with GitHub Actions
 
 ## How to use 🛠️
 
@@ -40,11 +52,11 @@ This Turborepo includes the following:
 
 ### Apps and Packages 📚
 
-- `@repo/docs`: a placeholder documentation site powered by [Nextra 3 alpha](https://the-guild.dev/blog/nextra-3) 📖
-- `@repo/web`: the main [Next.js](https://nextjs.org/) web application 🌐
-- `@repo/ui`: core React components and design system shared by both `web` and `docs` applications (🎨 powered by **shadcn/ui**)
-- `@repo/utils`: shared React utilities 🛠️
-- `@repo/tsconfig`: shared `tsconfig.json`s used throughout the monorepo 🛡️
+* `@repo/docs`: a placeholder documentation site powered by [Nextra 3 alpha](https://the-guild.dev/blog/nextra-3) 📖
+* `@repo/web`: the main [Next.js](https://nextjs.org/) web application 🌐
+* `@repo/ui`: core React components and design system shared by both `web` and `docs` applications (🎨 powered by **shadcn/ui**)
+* `@repo/utils`: shared React utilities 🛠️
+* `@repo/tsconfig`: shared `tsconfig.json`s used throughout the monorepo 🛡️
 
 Each package and app is 100% [TypeScript](https://www.typescriptlang.org/). 💪
 
@@ -52,12 +64,12 @@ Each package and app is 100% [TypeScript](https://www.typescriptlang.org/). 💪
 
 This Turborepo has some additional tools already set up for you:
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking ✅
-- [Biome](https://biomejs.dev/) for code linting, formatting, and fixing 🌿
-- [Vitest](https://vitest.dev/) for unit tests 🧪
-- [Playwright](https://playwright.dev/) for end-to-end tests 🧪
-- [Changesets](https://github.com/changesets/changesets) for managing versioning, changelogs, and publishing 📝
-- [Storybook](https://storybook.js.org/) for component development and documentation 📚
+* [TypeScript](https://www.typescriptlang.org/) for static type checking ✅
+* [Biome](https://biomejs.dev/) for code linting, formatting, and fixing 🌿
+* [Vitest](https://vitest.dev/) for unit tests 🧪
+* [Playwright](https://playwright.dev/) for end-to-end tests 🧪
+* [Changesets](https://github.com/changesets/changesets) for managing versioning, changelogs, and publishing 📝
+* [Storybook](https://storybook.js.org/) for component development and documentation 📚
 
 ### Storybook 📚
 
@@ -75,10 +87,10 @@ This will start Storybook and open it in your default browser.
 
 Storybook is configured to find stories in the following locations:
 
-- `apps/storybook/src/**/*.mdx`
-- `apps/storybook/src/**/*.stories.@(js|jsx|mjs|ts|tsx)`
-- `apps/web/src/**/*.stories.@(js|jsx|mjs|ts|tsx)`
-- `packages/ui/src/**/*.stories.@(js|jsx|mjs|ts|tsx)`
+* `apps/storybook/src/**/*.mdx`
+* `apps/storybook/src/**/*.stories.@(js|jsx|mjs|ts|tsx)`
+* `apps/web/src/**/*.stories.@(js|jsx|mjs|ts|tsx)`
+* `packages/ui/src/**/*.stories.@(js|jsx|mjs|ts|tsx)`
 
 This configuration allows you to write stories for components in both your web application and your shared UI library.
 
@@ -86,28 +98,28 @@ This configuration allows you to write stories for components in both your web a
 
 This setup includes several useful Storybook addons:
 
-- `@storybook/addon-links`: For linking between stories
-- `@storybook/addon-essentials`: A curated set of addons for a great developer experience
-- `@storybook/addon-onboarding`: For onboarding new users
-- `@storybook/addon-interactions`: For testing component interactions
-- `@storybook/addon-themes`: For theme switching in Storybook
-- `@storybook/addon-styling-webpack`: For handling CSS and PostCSS in Storybook
+* `@storybook/addon-links`: For linking between stories
+* `@storybook/addon-essentials`: A curated set of addons for a great developer experience
+* `@storybook/addon-onboarding`: For onboarding new users
+* `@storybook/addon-interactions`: For testing component interactions
+* `@storybook/addon-themes`: For theme switching in Storybook
+* `@storybook/addon-styling-webpack`: For handling CSS and PostCSS in Storybook
 
 ### Useful commands 🤖
 
-- `bun build` - Build all apps and packages
-- `bun dev` - Develop all apps and packages
-- `bun dev:ui` - Develop all apps and packages and display the output in Turbo's new experimental UI
-- `bun test` - Run all tests with vitest
-- `bun test:cov` - Run all unit tests with vitest and generate a coverage report
-- `bun test:cov:ui` - Run all unit tests with vitest and display the vitest UI
-- `bun test:e2e` - Run all end-to-end tests with playwright
-- `bun lint` - Lint and format all packages
-- `bun lint:fix` - Lint, format, and fix all packages
-- `bun changeset` - Generate a changeset 🧑‍🔧 - WIP
-- `bun clean` - Clean up all `node_modules` and `dist` folders (runs each package's clean script)
-- `bun ui:add:component` - Add a shadcn/ui component to the `@repo/ui` package
-- `bun storybook` - Run Storybook for component development and documentation
+* `bun build` - Build all apps and packages
+* `bun dev` - Develop all apps and packages
+* `bun dev:ui` - Develop all apps and packages and display the output in Turbo's new experimental UI
+* `bun test` - Run all tests with vitest
+* `bun test:cov` - Run all unit tests with vitest and generate a coverage report
+* `bun test:cov:ui` - Run all unit tests with vitest and display the vitest UI
+* `bun test:e2e` - Run all end-to-end tests with playwright
+* `bun lint` - Lint and format all packages
+* `bun lint:fix` - Lint, format, and fix all packages
+* `bun changeset` - Generate a changeset 🧑‍🔧 - WIP
+* `bun clean` - Clean up all `node_modules` and `dist` folders (runs each package's clean script)
+* `bun ui:add:component` - Add a shadcn/ui component to the `@repo/ui` package
+* `bun storybook` - Run Storybook for component development and documentation
 
 ### Add a new app or package 📦
 
@@ -163,11 +175,11 @@ Can automatically merges patch updates from Dependabot to reduce manual work.
 
 For the auto-merge workflow:
 
-- Go to your repository's Settings > Actions > General.
-- Under "Workflow permissions", select "Read and write permissions".
-- Check "Allow GitHub Actions to create and approve pull requests".
-- Save the changes.
-- Optionally, create a Personal Access Token (PAT) with `repo` scope and add it as a repository secret named `GITHUB_TOKEN` for enhanced security.
+* Go to your repository's Settings > Actions > General.
+* Under "Workflow permissions", select "Read and write permissions".
+* Check "Allow GitHub Actions to create and approve pull requests".
+* Save the changes.
+* Optionally, create a Personal Access Token (PAT) with `repo` scope and add it as a repository secret named `GITHUB_TOKEN` for enhanced security.
 
 #### 3. Automated Contributors List 🙌
 
@@ -199,50 +211,51 @@ The `docs` and `web` apps can be deployed to Vercel without any additional confi
 
 You can view the test deployments for these apps:
 
-- `apps/web`: [https://turborepo-shadcn-nextjs-web.vercel.app/](https://turborepo-shadcn-nextjs-web.vercel.app/)
-- `apps/docs`: [https://turborepo-shadcn-nextjs-docs.vercel.app/](https://turborepo-shadcn-nextjs-docs.vercel.app/)
+* `apps/web`: [https://turborepo-shadcn-nextjs-web.vercel.app/](https://turborepo-shadcn-nextjs-web.vercel.app/)
+* `apps/docs`: [https://turborepo-shadcn-nextjs-docs.vercel.app/](https://turborepo-shadcn-nextjs-docs.vercel.app/)
 
 ### Storybook Deployment 📚
 
 The `apps/storybook` is automatically deployed to GitHub Pages using a custom workflow.
 
-- **Workflow File**: You can find the deployment workflow at `.github/workflows/storybook-deploy.yml`
-- **Deployment URL**: The deployed Storybook can be accessed at [https://gmickel.github.io/turborepo-shadcn-nextjs/](https://gmickel.github.io/turborepo-shadcn-nextjs/)
+* **Workflow File**: You can find the deployment workflow at `.github/workflows/storybook-deploy.yml`
+* **Deployment URL**: The deployed Storybook can be accessed at [https://gmickel.github.io/turborepo-shadcn-nextjs/](https://gmickel.github.io/turborepo-shadcn-nextjs/)
 
 ## Useful Links and Thanks 🙏
 
 ### Build Tools and Configuration
 
-- [Turborepo Documentation](https://turbo.build/repo/docs)
-  - [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-  - [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-  - [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-  - [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-  - [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-  - [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
-- [Bun Documentation](https://bun.sh/docs)
-- [Biome Documentation](https://biomejs.dev/guides/getting-started/)
+* [Turborepo Documentation](https://turbo.build/repo/docs)
+  + [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
+  + [Caching](https://turbo.build/repo/docs/core-concepts/caching)
+  + [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
+  + [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
+  + [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
+  + [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+* [Bun Documentation](https://bun.sh/docs)
+* [Biome Documentation](https://biomejs.dev/guides/getting-started/)
 
 ### Frameworks and Libraries
 
-- [Next.js Documentation](https://nextjs.org/docs)
-- [Nextra Documentation](https://nextra.site/docs)
-- [shadcn/ui Documentation](https://ui.shadcn.com/docs)
+* [Next.js Documentation](https://nextjs.org/docs)
+* [Nextra Documentation](https://nextra.site/docs)
+* [shadcn/ui Documentation](https://ui.shadcn.com/docs)
 
 ### Testing Tools
 
-- [Vitest Documentation](https://vitest.dev/guide/)
-- [Playwright Documentation](https://playwright.dev/docs/intro)
+* [Vitest Documentation](https://vitest.dev/guide/)
+* [Playwright Documentation](https://playwright.dev/docs/intro)
 
 ### Development Tools
 
-- [Storybook Documentation](https://storybook.js.org/docs)
-- [Changesets Documentation](https://github.com/changesets/changesets)
+* [Storybook Documentation](https://storybook.js.org/docs)
+* [Changesets Documentation](https://github.com/changesets/changesets)
 
 ## Contributors 👨‍💻
 
-<!-- readme: collaborators,contributors -start -->
+<!-- readme: collaborators, contributors -start -->
 <table>
+
 	<tbody>
 		<tr>
             <td align="center">
@@ -254,5 +267,6 @@ The `apps/storybook` is automatically deployed to GitHub Pages using a custom wo
             </td>
 		</tr>
 	<tbody>
+
 </table>
-<!-- readme: collaborators,contributors -end -->
+<!-- readme: collaborators, contributors -end -->
