@@ -19,7 +19,7 @@
     "@repo/ui": "workspace:*",
     "@t3-oss/env-nextjs": "0.10.1",
     "next": "14.2.5",
-    "next-app-theme": "0.1.10",
+    "next-app-theme": "0.1.11",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "zod": "3.23.8"
