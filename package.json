@@ -24,7 +24,7 @@
     "changeset": "changeset",
     "version-packages": "changeset version",
     "release": "turbo build --filter=docs^... && changeset publish",
-    "ui:add:component": "turbo ui:add --filter=@repo/ui",
+    "ui:add:component": "turbo ui:add --filter=@repo/ui --",
     "prepare": "lefthook install",
     "storybook": "turbo dev --filter=@repo/storybook",
     "build:storybook": "turbo build --filter=@repo/storybook",
