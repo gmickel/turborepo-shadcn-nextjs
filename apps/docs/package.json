@@ -13,7 +13,7 @@
   "dependencies": {
     "@repo/ui": "workspace:*",
     "@repo/utils": "workspace:*",
-    "next": "14.2.6",
+    "next": "14.2.7",
     "nextra": "3.0.0-alpha.33",
     "nextra-theme-blog": "3.0.0-alpha.33",
     "nextra-theme-docs": "3.0.0-alpha.33",
