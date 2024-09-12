@@ -11,7 +11,7 @@
   "dependencies": {
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "next": "14.2.9",
+    "next": "14.2.10",
     "@repo/ui": "workspace:*",
     "@repo/web": "workspace:*"
   },
