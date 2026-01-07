@@ -4,7 +4,7 @@
   "description": "UI",
   "private": true,
   "scripts": {
-    "ui:add": "bunx shadcn-ui@latest add",
+    "ui:add": "bunx shadcn@latest add",
     "lint": "biome check .",
     "lint:fix": "biome check . --apply",
     "clean": "rm -rf .turbo && rm -rf node_modules"
