@@ -23,5 +23,10 @@
     ".next/types/**/*.ts",
     "postcss.config.mjs"
   ],
-  "exclude": ["node_modules", "**/*.stories.ts", "**/*.stories.tsx"]
+  "exclude": [
+    "node_modules",
+    "vitest.config.ts",
+    "**/*.stories.ts",
+    "**/*.stories.tsx"
+  ]
 }

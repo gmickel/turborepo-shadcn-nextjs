@@ -39,17 +39,18 @@
     "test:cov:ui": "turbo test:cov:ui"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.8.3",
-    "@changesets/cli": "2.27.12",
-    "@playwright/test": "1.45.3",
+    "@biomejs/biome": "1.9.4",
+    "@changesets/cli": "2.31.0",
+    "@playwright/test": "1.60.0",
     "@types/node": "20.14.15",
     "@types/react": "18.3.28",
-    "@vitest/coverage-v8": "2.0.5",
-    "@vitest/ui": "2.0.5",
-    "lefthook": "1.7.22",
-    "turbo": "2.0.14",
-    "typescript": "5.8.2",
-    "vitest": "2.0.5"
+    "@vitest/coverage-v8": "4.1.6",
+    "@vitest/ui": "4.1.6",
+    "lefthook": "2.1.6",
+    "turbo": "2.9.14",
+    "typescript": "5.9.3",
+    "vitest": "4.1.6",
+    "vite": "6.4.2"
   },
   "engines": {
     "node": ">=18"
@@ -64,6 +65,40 @@
     "sharp"
   ],
   "overrides": {
-    "next": "15.5.18"
+    "next": "15.5.18",
+    "tailwindcss": "3.4.19",
+    "postcss": "8.5.14",
+    "qs": "6.15.2",
+    "brace-expansion": "2.1.0",
+    "minimatch": "9.0.9",
+    "mdast-util-to-hast": "13.2.1",
+    "webpack": "5.106.2",
+    "yaml": "2.9.0",
+    "rollup": "4.60.4",
+    "flatted": "3.4.2",
+    "esbuild": "0.27.2",
+    "sha.js": "2.4.12",
+    "pbkdf2": "3.1.5",
+    "katex": "0.16.47",
+    "glob": "10.5.0",
+    "nanoid": "3.3.12",
+    "@babel/runtime": "7.29.2",
+    "@babel/helpers": "7.29.2",
+    "image-size": "2.0.2",
+    "ajv": "8.20.0",
+    "serialize-javascript": "7.0.5",
+    "braces": "3.0.3",
+    "js-yaml": "3.14.2",
+    "cross-spawn": "7.0.6",
+    "@babel/plugin-transform-modules-systemjs": "7.29.4",
+    "ws": "7.5.10",
+    "cipher-base": "1.0.7",
+    "micromatch": "4.0.8",
+    "bn.js": "5.2.3",
+    "picomatch": "2.3.2",
+    "elliptic": "6.6.1",
+    "@playwright/test": "1.60.0",
+    "playwright": "1.60.0",
+    "vite": "6.4.2"
   }
 }

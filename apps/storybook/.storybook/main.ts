@@ -1,5 +1,5 @@
 import path from 'node:path';
-import type { StorybookConfig } from '@storybook/nextjs';
+import type { StorybookConfig } from '@storybook/react-vite';
 
 const config: StorybookConfig = {
   stories: [
@@ -14,40 +14,21 @@ const config: StorybookConfig = {
     '@storybook/addon-onboarding',
     '@storybook/addon-interactions',
     '@storybook/addon-themes',
-    {
-      name: '@storybook/addon-styling-webpack',
-      options: {
-        rules: [
-          {
-            test: /\.css$/,
-            use: [
-              'style-loader',
-              'css-loader',
-              {
-                loader: 'postcss-loader',
-                options: {
-                  postcssOptions: require('../postcss.config.mjs'),
-                },
-              },
-            ],
-          },
-        ],
-      },
-    },
   ],
   framework: {
-    name: '@storybook/nextjs',
+    name: '@storybook/react-vite',
     options: {},
   },
   docs: {
     autodocs: 'tag',
   },
-  webpackFinal: async (config) => {
+  viteFinal: async (config) => {
     if (config.resolve) {
       config.resolve.alias = {
         ...config.resolve.alias,
         '@repo/ui': path.resolve(__dirname, '../../../packages/ui/src'),
         '@repo/web': path.resolve(__dirname, '../../../apps/web/src'),
+        '@ui': path.resolve(__dirname, '../../../packages/ui/src'),
       };
     }
     return config;
