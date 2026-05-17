@@ -4,6 +4,7 @@ import nextra from 'nextra';
 
 const nextConfig = {
   transpilePackages: ['@repo/ui'],
+  pageExtensions: ['tsx', 'ts', 'mdx'],
   reactStrictMode: true,
 };
 

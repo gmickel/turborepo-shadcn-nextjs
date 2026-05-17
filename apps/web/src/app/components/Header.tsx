@@ -1,10 +1,4 @@
-import dynamic from 'next/dynamic';
-
-const ThemeSwitcher = dynamic(() => import('./ThemeSwitcher'), {
-  ssr: false,
-  loading: () => <div className="w-6 h-6" />,
-});
-
+import ThemeSwitcherNoSSR from '@/app/components/ThemeSwitcherNoSSR';
 import MountainIcon from '@/app/components/icons/MountainIcon';
 
 export default function Header() {
@@ -14,7 +8,7 @@ export default function Header() {
         <MountainIcon className="h-6 w-6" />
         <span className="sr-only">Acme Inc</span>
       </div>
-      <ThemeSwitcher />
+      <ThemeSwitcherNoSSR />
     </header>
   );
 }
