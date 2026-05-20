@@ -45,7 +45,7 @@
     "@types/node": "20.14.15",
     "@types/react": "18.3.28",
     "@vitest/coverage-v8": "4.1.6",
-    "@vitest/ui": "4.1.6",
+    "@vitest/ui": "4.1.7",
     "lefthook": "2.1.6",
     "turbo": "2.9.14",
     "typescript": "5.9.3",
