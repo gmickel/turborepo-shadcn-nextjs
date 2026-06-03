@@ -49,7 +49,7 @@
     "lefthook": "2.1.9",
     "turbo": "2.9.16",
     "typescript": "5.9.3",
-    "vitest": "4.1.7",
+    "vitest": "4.1.8",
     "vite": "6.4.3"
   },
   "engines": {
