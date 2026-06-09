@@ -47,7 +47,7 @@
     "@vitest/coverage-v8": "4.1.8",
     "@vitest/ui": "4.1.8",
     "lefthook": "2.1.9",
-    "turbo": "2.9.16",
+    "turbo": "2.9.17",
     "typescript": "5.9.3",
     "vitest": "4.1.8",
     "vite": "6.4.3"
