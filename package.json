@@ -44,7 +44,7 @@
     "@playwright/test": "1.60.0",
     "@types/node": "20.14.15",
     "@types/react": "18.3.28",
-    "@vitest/coverage-v8": "4.1.8",
+    "@vitest/coverage-v8": "4.1.9",
     "@vitest/ui": "4.1.9",
     "lefthook": "2.1.9",
     "turbo": "2.9.18",
