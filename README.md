@@ -292,3 +292,10 @@ The `apps/storybook` is automatically deployed to GitHub Pages using a custom wo
 
 </table>
 <!-- readme: collaborators, contributors -end -->
+
+## CI cadence
+
+PRs and main pushes run the deterministic build, unit tests, Chromium smoke and lint.
+Superseded PR runs are cancelled. Dependency updates are grouped weekly at the workspace root;
+Storybook publishes only when its inputs change. Contributor refreshes run weekly or manually.
+Run focused tests locally during edits; no scheduled browser suite is needed for this template.

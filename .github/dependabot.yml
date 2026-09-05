@@ -1,107 +1,29 @@
 version: 2
 updates:
-  # Root package.json
-  - package-ecosystem: "npm"
-    directory: "/"
+  - package-ecosystem: bun
+    directory: /
     schedule:
-      interval: "daily"
-    allow:
-      - dependency-type: "all"
-    open-pull-requests-limit: 10
-    versioning-strategy: "auto"
-    commit-message:
-      prefix: "chore"
-      include: "scope"
-    labels:
-      - "dependencies"
+      interval: weekly
+    open-pull-requests-limit: 3
+    groups:
+      workspace-patches:
+        patterns: ['*']
+        update-types: [patch]
     ignore:
-      - dependency-name: "*"
-        update-types: ["version-update:semver-major", "version-update:semver-minor"]
-
-  # /apps/web
-  - package-ecosystem: "npm"
-    directory: "/apps/web"
-    schedule:
-      interval: "daily"
-    allow:
-      - dependency-type: "all"
-    open-pull-requests-limit: 10
-    versioning-strategy: "auto"
+      - dependency-name: '*'
+        update-types: [version-update:semver-major, version-update:semver-minor]
     commit-message:
-      prefix: "chore"
-      include: "scope"
-    labels:
-      - "dependencies"
-      - "web"
-    ignore:
-      - dependency-name: "*"
-        update-types: ["version-update:semver-major", "version-update:semver-minor"]
-
-  # /apps/docs
-  - package-ecosystem: "npm"
-    directory: "/apps/docs"
+      prefix: chore
+      include: scope
+    labels: [dependencies]
+  - package-ecosystem: github-actions
+    directory: /
     schedule:
-      interval: "daily"
-    allow:
-      - dependency-type: "all"
-    open-pull-requests-limit: 10
-    versioning-strategy: "auto"
+      interval: weekly
+    groups:
+      actions:
+        patterns: ['*']
     commit-message:
-      prefix: "chore"
-      include: "scope"
-    labels:
-      - "dependencies"
-      - "docs"
-    ignore:
-      - dependency-name: "*"
-        update-types: ["version-update:semver-major", "version-update:semver-minor"]
-
-  # /packages/ui
-  - package-ecosystem: "npm"
-    directory: "/packages/ui"
-    schedule:
-      interval: "daily"
-    allow:
-      - dependency-type: "all"
-    open-pull-requests-limit: 10
-    versioning-strategy: "auto"
-    commit-message:
-      prefix: "chore"
-      include: "scope"
-    labels:
-      - "dependencies"
-      - "ui"
-    ignore:
-      - dependency-name: "*"
-        update-types: ["version-update:semver-major", "version-update:semver-minor"]
-
-  # /packages/utils
-  - package-ecosystem: "npm"
-    directory: "/packages/utils"
-    schedule:
-      interval: "daily"
-    allow:
-      - dependency-type: "all"
-    open-pull-requests-limit: 10
-    versioning-strategy: "auto"
-    commit-message:
-      prefix: "chore"
-      include: "scope"
-    labels:
-      - "dependencies"
-      - "utils"
-    ignore:
-      - dependency-name: "*"
-        update-types: ["version-update:semver-major", "version-update:semver-minor"]
-
-  # GitHub Actions
-  - package-ecosystem: "github-actions"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-    commit-message:
-      prefix: "chore"
-      include: "scope"
-    labels:
-      - "dependencies"
-      - "github-actions"
+      prefix: chore
+      include: scope
+    labels: [dependencies, github-actions]
