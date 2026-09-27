@@ -13,7 +13,7 @@
   "dependencies": {
     "@repo/ui": "workspace:*",
     "@repo/utils": "workspace:*",
-    "next": "15.5.25",
+    "next": "15.5.26",
     "nextra": "3.3.1",
     "nextra-theme-blog": "3.3.1",
     "nextra-theme-docs": "3.3.1",
@@ -27,8 +27,8 @@
     "@types/react": "18.3.28",
     "@types/react-dom": "18.3.7",
     "typescript": "5.9.3",
-    "autoprefixer": "10.5.4",
-    "postcss": "8.5.26",
+    "autoprefixer": "10.5.6",
+    "postcss": "8.5.28",
     "tailwindcss": "3.4.19"
   }
 }
