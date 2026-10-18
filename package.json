@@ -44,13 +44,13 @@
     "@playwright/test": "1.60.0",
     "@types/node": "20.14.15",
     "@types/react": "18.3.28",
-    "@vitest/coverage-v8": "4.1.11",
-    "@vitest/ui": "4.1.11",
-    "lefthook": "2.1.12",
+    "@vitest/coverage-v8": "4.1.12",
+    "@vitest/ui": "4.1.12",
+    "lefthook": "2.1.17",
     "turbo": "2.9.18",
     "typescript": "5.9.3",
-    "vitest": "4.1.11",
-    "vite": "6.4.3"
+    "vitest": "4.1.12",
+    "vite": "6.4.4"
   },
   "engines": {
     "node": ">=18"
